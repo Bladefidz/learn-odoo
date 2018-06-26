@@ -29,5 +29,6 @@
         'demo/demo.xml',
     ],
 
-    'application': true
+    'application': True,
+    'installable': True
 }
