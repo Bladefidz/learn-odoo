@@ -19,4 +19,11 @@ Learn odoo framework from basic. Use **Docker** for easier configuration and set
 	* [Business logic layer](tutorial/2.3.business-logic-layer.md)
 	* [Access security](tutorial/2.4.access-security.md)
 	* [Adding an icon to the module](tutorial/2.5.adding-icon-module.md)
+	* Example: To-do Task Application:
+		- Treeview
+		![treeview](images/to-do-task-treeview.png)
+		- Record view
+		![view](images/to-do-task-view.png)
+		- Form
+		![form](images/to-do-task-form.png)
 3. [Inheritance](tutorial/3.inheritance.md)
