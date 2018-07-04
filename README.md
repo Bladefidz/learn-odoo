@@ -27,3 +27,9 @@ Learn odoo framework from basic. Use **Docker** for easier configuration and set
 		- Form
 		![form](images/to-do-task-form.png)
 3. [Inheritance](tutorial/3.inheritance.md)
+	* [Extending model](tutorial/3.1.extending-model.md)
+	* [Extending views](tutorial/3.2.extending-views.md)
+	* [Extending tree and search views](tutorial/3.3.extending-tree-and-search-view.md)
+	* [More to extend models](tutorial/3.4.more-to-extend-models.md)
+	* [Add Social Network Features](tutorial/3.5.add-social-network-features.md)
+	* [Modifying Data](tutorial/3.6.modifying-data.md)
