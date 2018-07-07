@@ -26,6 +26,9 @@ sudo apt-get install git vim  -y > /dev/null
 print_out "Install odoo dev dependencies (it may take a long time)"
 sudo apt-get install libxml2-dev libxslt1-dev python-dev libldap2-dev libsasl2-dev build-essential python-pil python-lxml python-ldap python-dev libldap2-dev libsasl2-dev python-setuptools libxml2-dev libxslt1-dev libjpeg-dev python-pip gdebi python3-dev python3-psycopg2 libpq-dev -y > /dev/null
 
+print_out "Install psycopg2 binary"
+sudo -H pip install --no-binary :all: psycopg2
+
 print_out "Install postgresql"
 sudo apt-get install postgresql postgresql-contrib -y > /dev/null
 
@@ -39,11 +42,11 @@ sudo ln -s /usr/bin/nodejs /usr/bin/node > /dev/null
 
 print_out "Download and install wkhtmltox"
 cd /tmp
-wget -q http://download.gna.org/wkhtmltopdf/0.12/0.12.2.1/wkhtmltox-0.12.2.1_linux-trusty-amd64.deb > /dev/null
-sudo gdebi -n wkhtmltox-0.12.2.1_linux-trusty-amd64.deb > /dev/null
+wget -q https://downloads.wkhtmltopdf.org/0.12/0.12.5/wkhtmltox_0.12.5-1.xenial_amd64.deb > /dev/null
+sudo gdebi -n wkhtmltox_0.12.5-1.xenial_amd64.deb > /dev/null
 sudo ln -s /usr/local/bin/wkhtmltopdf /usr/bin/ > /dev/null
 sudo ln -s /usr/local/bin/wkhtmltoimage /usr/bin/ > /dev/null
-rm -fr wkhtmltox-0.12.2.1_linux-trusty-amd64.deb > /dev/null
+rm -fr wkhtmltox_0.12.5-1.xenial_amd64.deb > /dev/null
 
 print_out "Download odoo from github"
 git clone --depth=1 --branch=9.0 https://github.com/odoo/odoo.git ~/odoo-dev/odoo > /dev/null
