@@ -9,7 +9,7 @@ services:
     ports:
       - "8069:8069"
     volumes:
-      - ./addons:/mnt/extra-addons
+      - ./custom-addons:/mnt/extra-addons
       - odoo:/var/lib/odoo
   postgres:
     image: postgres:9.4
