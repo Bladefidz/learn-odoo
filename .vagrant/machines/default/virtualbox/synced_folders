@@ -1,0 +1,1 @@
+{"virtualbox":{"/home/vagrant/odoo-dev/odoo/extra_addons":{"create":true,"guestpath":"/home/vagrant/odoo-dev/odoo/extra_addons","hostpath":"/home/bladefidz/Codes/learn-odoo/addons","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/home/bladefidz/Codes/learn-odoo","disabled":false,"__vagrantfile":true}}}

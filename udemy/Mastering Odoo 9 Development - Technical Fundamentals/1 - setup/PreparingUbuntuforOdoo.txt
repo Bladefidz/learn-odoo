@@ -1,0 +1,23 @@
+Use this simple checklist to install Odoo
+
+Press ctrl-alt-t to bring up a terminal window in Ubuntu desktop
+
+# Apply any patches and make sure your Ubuntu server is accessing the Internet
+
+sudo apt-get update
+sudo apt-get dist-upgrade
+
+# reboot your server
+
+sudo reboot
+
+# install postgres
+
+sudo apt-get install postgresql
+
+# change over to the postgresql to set permissions on our development user
+
+sudo su - postgres
+
+createuser --createdb --username postgres --pwprompt odoodev
+
